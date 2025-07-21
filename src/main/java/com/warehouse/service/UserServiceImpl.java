@@ -43,7 +43,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findUserByEmail(username);
+        // The username parameter represents the login value from the form
+        // which is mapped to the username column in the database. The
+        // previous implementation searched by email causing authentication
+        // failures when users attempted to log in with their usernames.
+        User user = userRepository.findUserByUsername(username);
         if (user == null) {
             throw new UsernameNotFoundException("Invalid login or password");
         }
