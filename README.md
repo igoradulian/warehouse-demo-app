@@ -1,31 +1,24 @@
-# Warehouse simulation application   ![GitHub Image](/spring.png) ![GitHub Image](/junit.png) ![GitHub Image](/maven.png)
-Warehouse managment application for education and demo purposes		
-    
-Project created as a guide and demo for learning purposes.
-    
-#Who can use it?
-These example is useful both for beginners with no previous experience
-with Spring and for individuals who good knowlgde of Spring Boot.
-However, Java programing basic knowledge needed.
-Instructors may use these examples for teaching purposes.
+# Warehouse Demo Application  ![Spring](/spring.png) ![JUnit](/junit.png) ![Maven](/maven.png)
 
-#Usage
+This project provides a simple warehouse management system built with **Spring Boot**. It was created as a guide for learning purposes and makes a handy portfolio sample.
 
-1.Spring_boot_basic branch is an example of how use Spring Boot Thymeleaf engine to create dynamic html pages. However, 
-from this example you also can learn about such annotations like @Controller, @PostMapping, @GetMapping, @Valid, @ModelAttibute, @Bean, @Scope, @Session, @Atowired and others. 
-This example also show how to use Lombok annotations
+## Who can use it?
+- Beginners exploring Spring Boot MVC
+- Developers looking for a minimal CRUD example
 
-a.Before download be sure you have Java 17 JDK installed. It is recommended to use IntelliJ IDE to run this project.
+Basic Java knowledge is expected.
 
-Spring Boot MVC and Thymeleaf project demonstrates how Java class or variable can be mapped to html. Run project and use such Browser like Chrome to navigate root url is:
+## Usage
+1. Install Java 17 and clone the repository.
+2. Run the application with `./mvnw spring-boot:run`.
+3. Open `http://localhost:8080` in your browser.
 
-http://localhost:8080/
+The home page lets you register, log in and manage products. An `About` page describes the application.
 
-Main fetures demonostrated in project:
+## Main features demonstrated
+1. Spring Data JPA
+2. Spring Security 6 with a custom `UserDetails` service
+3. JUnit testing (sample tests to be expanded)
+4. Handling `@RequestParam` and `@PathVariable`
+5. MVC controllers with Thymeleaf templates and fragments
 
-1. Spring data JPA
-2. Spring Security 6 with UserPrincipal implementation, Thymeleafe conditions and Spring Security context usage with Thymeleafe
-3. JUnit testing (will be refactored)
-4. Demostrating @RequestParam and @PathVariable annotations
-5. @Controller, @GetMapping, @PostMapping
-6. Thymeleafe templates utilizing forms, objects, fragments, iteration statements and other.
